@@ -62,7 +62,7 @@ layout = dbc.Container(
                                         dcc.Markdown(
                                             contenu_md2,
                                             dangerously_allow_html=False,
-                                            style={
+                                            style={"color":"white",
                                                 "padding": "20px",
                                                 "backgroundColor": "#2c2c2c",
                                             }

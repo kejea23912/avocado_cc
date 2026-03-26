@@ -27,11 +27,22 @@ navbar = dbc.NavbarSimple(
     className="mb-3",
 )
 
-app.layout = html.Div([
-    dcc.Location(id='url', refresh=False),
-    navbar,
-    html.Div(id='page-content')
-])
+app.layout = html.Div(
+    children=[
+        dcc.Location(id='url', refresh=False),
+        navbar,
+        html.Div(id='page-content',
+                 style={"padding": "0 20px 20px 20px"},
+        ),
+],
+    style={
+        "backgroundImage": "url('/assets/BG.jpg')",
+        "backgroundSize": "cover",
+        "backgroundAttachment": "fixed",
+        "backgroundPosition": "center",
+        "minHeight": "100vh",
+    }
+)
 
 @app.callback(
     Output("page-content", "children"),
