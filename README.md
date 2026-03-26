@@ -82,7 +82,7 @@ uv sync
 | `Commit 4` | Mise en place des callbacks pour la page 2 |
 | `Commit 5` | Création du layout de la page 3 |
 | `Commit 6` | Passage à une application multipages |
-| `Commit 7` | Améliorations finales et nettoyage du code |
+| `Commit 7` | vérification app|
 
 ---
 
