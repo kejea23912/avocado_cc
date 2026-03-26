@@ -24,6 +24,7 @@ options_regions = [
     for region in sorted(df["region"].unique())
 ]
 
+
 options_types = (
     [{"label": "  Tous", "value": "Tous"}]
     + [{"label": f"  {t}", "value": t} for t in sorted(df["type"].unique())]
@@ -104,7 +105,7 @@ layout = dbc.Container(
                                     sort_action="native",
                                     page_size=15,
                                     style_header={
-                                        "backgroundColor": "#0d6efd",
+                                        "backgroundColor": "#6e6e6e",
                                         "color": "white",
                                         "fontWeight": "bold",
                                         "textAlign": "left",
@@ -129,7 +130,7 @@ layout = dbc.Container(
                                     style_data_conditional=[
                                         {
                                             "if": {"row_index": "odd"},
-                                            "backgroundColor": "#f8f9fa",}],))),]),],
+                                            "backgroundColor": "#D4D4D4",}],))),]),],
             style={
                 "backgroundColor": "rgba(255, 255, 255, 0.93)",
                 "borderRadius": "8px",

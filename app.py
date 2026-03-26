@@ -9,6 +9,7 @@ app = Dash(
 )
 from pages.page_1 import layout as page1_layout
 from pages.page_2 import layout as page2_layout
+from pages.markdown import layout as page3_layout
 
 import pages.page_1_cb
 import pages.page_2_cb
@@ -40,6 +41,8 @@ def display_page(pathname):
     """Retourne le layout correspondant à l'URL."""
     if pathname == "/page2":
         return page2_layout
+    elif pathname == "/page3":
+        return page3_layout
     else:
         return page1_layout
   
