@@ -11,6 +11,7 @@ from pages.page_1 import layout as page1_layout
 from pages.page_2 import layout as page2_layout
 
 import pages.page_1_cb
+import pages.page_2_cb
 
 navbar = dbc.NavbarSimple(
     children=[
