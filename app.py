@@ -8,7 +8,9 @@ app = Dash(
     suppress_callback_exceptions=True 
 )
 from pages.page_1 import layout as page1_layout
- 
+
+import pages.page_1_cb
+
 navbar = dbc.NavbarSimple(
     children=[
         dbc.NavItem(dbc.NavLink("Comparaison entre région", href="/page1",       active="exact")),

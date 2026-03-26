@@ -7,7 +7,7 @@ df = pd.read_csv("datas/avocado.csv")
 df["Date"] = pd.to_datetime(df["Date"])
 
 REGIONS_FIXES = [
-    "MidSouth",
+    "Midsouth",
     "Northeast",
     "SouthCentral",
     "Southeast",
@@ -64,7 +64,7 @@ layout = dbc.Container(
                                             "marginBottom": "8px",
                                             "display": "block",
                                             "textAlign": "center",
-                                            "backgroundColor": "#6f42c1",  # violet comme dans le sujet
+                                            "backgroundColor": "#471a99",  # violet comme dans le sujet
                                         }
                                     ),
                                     dbc.Select(
